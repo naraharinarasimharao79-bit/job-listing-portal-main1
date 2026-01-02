@@ -2,7 +2,7 @@
 # Node / Project ignores
 # ======================
 
-# Node
+# Node dependencies
 node_modules/
 
 # Environment variables
@@ -10,16 +10,17 @@ node_modules/
 .env.*
 !.env.example
 
-# React build
+# Frontend (React)
 frontend/node_modules/
 frontend/build/
 
 # Logs
-logs
+logs/
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
 lerna-debug.log*
 
 # Diagnostic reports
@@ -31,24 +32,20 @@ pids
 *.seed
 *.pid.lock
 
-# Instrumented libs
-lib-cov
-
 # Coverage
-coverage
+coverage/
 *.lcov
 .nyc_output
 
 # Grunt
-.grunt
+.grunt/
 
 # Bower
-bower_components
+bower_components/
 
-# node-waf
-.lock-wscript
-
-# Compiled addons
+# Build outputs
+build/
+dist/
 build/Release
 
 # Dependency directories
@@ -58,7 +55,7 @@ web_modules/
 # TypeScript
 *.tsbuildinfo
 
-# npm / yarn
+# npm / yarn cache
 .npm
 .eslintcache
 .stylelintcache
@@ -66,30 +63,25 @@ web_modules/
 *.tgz
 .yarn-integrity
 
-# Parcel
-.cache
+# Parcel / Vite
+.cache/
 .parcel-cache
+.vite/
 
 # Next.js / Nuxt / Gatsby
-.next
-out
-.nuxt
-dist
-.cache/
+.next/
+out/
+.nuxt/
+.docusaurus/
 
 # Vue / Svelte
 .vuepress/dist
 .temp
 .svelte-kit/
 
-# Vite / VitePress
+# VitePress
 **/.vitepress/dist
 **/.vitepress/cache
-vite.config.js.timestamp-*
-vite.config.ts.timestamp-*
-
-# Docusaurus
-.docusaurus
 
 # Serverless / Firebase / DynamoDB
 .serverless/
@@ -105,7 +97,7 @@ vite.config.ts.timestamp-*
 # VS Code testing
 .vscode-test
 
-# Yarn v3
+# Yarn v3+
 .pnp.*
 .yarn/*
 !.yarn/patches
