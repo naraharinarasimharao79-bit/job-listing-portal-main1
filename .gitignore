@@ -1,0 +1,119 @@
+# ======================
+# Node / Project ignores
+# ======================
+
+# Node
+node_modules/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# React build
+frontend/node_modules/
+frontend/build/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Diagnostic reports
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Instrumented libs
+lib-cov
+
+# Coverage
+coverage
+*.lcov
+.nyc_output
+
+# Grunt
+.grunt
+
+# Bower
+bower_components
+
+# node-waf
+.lock-wscript
+
+# Compiled addons
+build/Release
+
+# Dependency directories
+jspm_packages/
+web_modules/
+
+# TypeScript
+*.tsbuildinfo
+
+# npm / yarn
+.npm
+.eslintcache
+.stylelintcache
+.node_repl_history
+*.tgz
+.yarn-integrity
+
+# Parcel
+.cache
+.parcel-cache
+
+# Next.js / Nuxt / Gatsby
+.next
+out
+.nuxt
+dist
+.cache/
+
+# Vue / Svelte
+.vuepress/dist
+.temp
+.svelte-kit/
+
+# Vite / VitePress
+**/.vitepress/dist
+**/.vitepress/cache
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+
+# Docusaurus
+.docusaurus
+
+# Serverless / Firebase / DynamoDB
+.serverless/
+.firebase/
+.dynamodb/
+
+# FuseBox
+.fusebox/
+
+# Tern
+.tern-port
+
+# VS Code testing
+.vscode-test
+
+# Yarn v3
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# OS files
+.DS_Store
+Thumbs.db
